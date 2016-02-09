@@ -26,4 +26,9 @@ public class MainActivity extends Activity {
 	public void goWrongWay1(View v) {
 		startActivity(new Intent(this, WrongWay1Activity.class));
 	}
+
+	@OnClick(R.id.alternative1)
+	public void goForAlternative1(View v) {
+		startActivity(new Intent(this, Alternative1Activity.class));
+	}
 }

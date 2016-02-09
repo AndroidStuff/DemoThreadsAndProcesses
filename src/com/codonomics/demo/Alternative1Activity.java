@@ -16,7 +16,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class WrongWay1Activity extends Activity {
+public class Alternative1Activity extends Activity {
 	private final static String TAG = WrongWay1Activity.class.getSimpleName();
 
 	protected static final String URL_RANDOM_IMAGE = "http://lorempixel.com/250/250/";
@@ -27,22 +27,30 @@ public class WrongWay1Activity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_wrong_way_1);
+		setContentView(R.layout.activity_alternative1);
 
 		ButterKnife.setDebug(true);
 		ButterKnife.bind(this);
 	}
 
-	//This implementation throws FATAL EXCEPTION: Only the original thread that created a view hierarchy can touch its views.
-	//Reason is we're updating the randomImageView view created by parent thread.
+	//Now this implementation is thread-safe: the network operation is done from a separate thread while the ImageView is manipulated from the UI thread.
+	//However, as the complexity of the operation grows, this kind of code can get complicated and difficult to maintain.
+	//To handle more complex interactions with a worker thread, you might consider using a ``Handler`` in your worker thread, to process messages delivered from the UI thread.
+	//Perhaps the best solution, though, is to extend the AsyncTask class, which simplifies the execution of worker thread tasks that need to interact with the UI.
+	//More of these in the next button examples of this application..
 	@OnClick(R.id.randomImageButton)
 	public void getRandomImage(View v) {
 		Log.d(TAG, "In getRandomImage(..)");
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
-				Bitmap image = loadImageFromNetwork(URL_RANDOM_IMAGE);
-				randomImageView.setImageBitmap(image);
+				final Bitmap image = loadImageFromNetwork(URL_RANDOM_IMAGE);
+				randomImageView.post(new Runnable() {
+					@Override
+					public void run() {
+						randomImageView.setImageBitmap(image);
+					}
+				});
 			}
 		}).start();
 	}

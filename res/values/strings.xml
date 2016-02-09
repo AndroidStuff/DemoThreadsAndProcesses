@@ -5,5 +5,12 @@
     <string name="wrong_way_1">Wrong Way 1</string>
     <string name="app_explanation">Demo different ways to code heavy weight or slow tasks in Android. Play and read the code.</string>
     <string name="randomImage">Get Random Image</string>
+    <string name="content_description">Random Image Here</string>
+    <string name="app_crash_warning">
+        Click the above button at your own risk. You click it and the app crashes. 
+        And when app crashes, don\'t forget to check your logs to see the error message saying, 
+        \"only the original thread that created the view hierarchy can touch its views..\"
+        </string>
+    <string name="alternative1">Option 1: Using View.post(Runnable)</string>
 
 </resources>

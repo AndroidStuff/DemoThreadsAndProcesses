@@ -16,5 +16,12 @@
         android:layout_height="wrap_content"
         android:onClick="goWrongWay1"
         android:text="@string/wrong_way_1" />
+    
+    <Button
+        android:id="@+id/alternative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goForAlternative1"
+        android:text="@string/alternative1" />
 
 </LinearLayout>
