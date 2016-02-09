@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">Demo Threads And Processes</string>
-    <string name="WrongWay1">Wrong Way 1</string>
+    <string name="wrong_way_1">Wrong Way 1</string>
     <string name="app_explanation">Demo different ways to code heavy weight or slow tasks in Android. Play and read the code.</string>
+    <string name="randomImage">Get Random Image</string>
 
 </resources>
