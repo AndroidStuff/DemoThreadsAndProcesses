@@ -12,5 +12,21 @@ Andoid UI toolkit is not thread-safe. So, you must not manipulate your UI from a
 
 ### Alternatives
 
+* View.post(Runnable) or View.postDelayed(Runnable, long)
+* Activity.runOnUiThread(Runnable)
+* Handler
+* AsyncTask [This one is ideal]
+
 ## Inspiration, References and Sources
 * [Develop > API Guides > Processes and Threads](http://developer.android.com/guide/components/processes-and-threads.html)
+* The following services can be used to fetch Random Pictures (They are called as Placeholder Image Sites, primarily for help to Designers :)
+    - [LoremPixel](http://lorempixel.com/)
+    - [LoremFlickr](http://loremflickr.com/150/150/dog)
+    - [PlaceKitten](http://placekitten.com/)
+    - [PlaceDog](http://placedog.com/)
+    - [Placehold.it](http://placehold.it/)
+    - [DummyImage](http://dummyimage.com/)
+    - [SheenHolders](http://sheenholders.com/)
+    - [FlickHoldr](http://flickholdr.com/)
+    - [Griddle.it](http://griddle.it/)
+

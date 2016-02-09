@@ -31,4 +31,9 @@ public class MainActivity extends Activity {
 	public void goForAlternative1(View v) {
 		startActivity(new Intent(this, Alternative1Activity.class));
 	}
+
+	@OnClick(R.id.alternative2)
+	public void goForAlternative2(View v) {
+		startActivity(new Intent(this, Alternative2Activity.class));
+	}
 }

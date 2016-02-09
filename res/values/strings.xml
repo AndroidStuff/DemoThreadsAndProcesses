@@ -12,5 +12,6 @@
         \"only the original thread that created the view hierarchy can touch its views..\"
         </string>
     <string name="alternative1">Option 1: Using View.post(Runnable)</string>
+    <string name="alternative2">Option 2: Use runOnUiThread (Syntax sugar to Opt.1)</string>
 
 </resources>

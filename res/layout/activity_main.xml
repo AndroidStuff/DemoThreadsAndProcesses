@@ -23,5 +23,12 @@
         android:layout_height="wrap_content"
         android:onClick="goForAlternative1"
         android:text="@string/alternative1" />
+    
+    <Button
+        android:id="@+id/alternative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goForAlternative2"
+        android:text="@string/alternative2" />
 
 </LinearLayout>

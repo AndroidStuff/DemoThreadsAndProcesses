@@ -32,6 +32,10 @@
         <activity 
             android:name=".Alternative1Activity"
             android:label="@string/app_name" />
+        
+        <activity 
+            android:name=".Alternative2Activity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
