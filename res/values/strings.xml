@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo Threads And Processes</string>
+    <string name="WrongWay1">Wrong Way 1</string>
+    <string name="app_explanation">Demo different ways to code heavy weight or slow tasks in Android. Play and read the code.</string>
+
+</resources>
