@@ -15,7 +15,7 @@ Andoid UI toolkit is not thread-safe. So, you must not manipulate your UI from a
 * View.post(Runnable) or View.postDelayed(Runnable, long) [see Alternative1Activity.java, Line 48]
 * Activity.runOnUiThread(Runnable) [see Alternative2Activity.java, Line 48]
 * Handler [see Alternative3Activity.java, Line 52]
-* AsyncTask (This one is ideal)  [see BetterAlternativeActivity.java, Line 48]
+* AsyncTask (This one is ideal)  [see BetterAlternativeActivity.java, Line 44]
 
 ## Inspiration, References and Sources
 * [Develop > API Guides > Processes and Threads](http://developer.android.com/guide/components/processes-and-threads.html)
