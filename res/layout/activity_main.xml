@@ -38,4 +38,11 @@
         android:onClick="goForAlternative3"
         android:text="@string/alternative3" />
 
+    <Button
+        android:id="@+id/betterAlternative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goForBetterAlternative"
+        android:text="@string/betterAlternative" />
+
 </LinearLayout>

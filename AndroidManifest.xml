@@ -40,6 +40,10 @@
         <activity 
             android:name=".Alternative3Activity"
             android:label="@string/app_name" />
+
+        <activity
+            android:name=".BetterAlternativeActivity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

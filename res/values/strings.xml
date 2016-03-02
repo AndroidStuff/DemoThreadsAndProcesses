@@ -14,5 +14,5 @@
     <string name="alternative1">Option 1: Using View.post(Runnable)</string>
     <string name="alternative2">Option 2: Use runOnUiThread (Syntax sugar to Opt.1)</string>
     <string name="alternative3">Option 3: Use Handler (Syntax sugar to Opt. 1)</string>
-
+    <string name="betterAlternative">Option 4: Use AsyncTask (Ideal Option)</string>
 </resources>
